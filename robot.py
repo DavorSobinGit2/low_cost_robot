@@ -65,7 +65,7 @@ class Robot:
             if tries > 0:
                 return self.read_position(tries=tries - 1)
             else:
-                print(f'failed to read position!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+                print('failed to read position!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
         positions = []
         for id in self.servo_ids:
             position = self.position_reader.getData(id, ReadAttribute.POSITION.value, 4)
